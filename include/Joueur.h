@@ -12,11 +12,13 @@ class Joueur
         string prenom;
         Date date_Naiss;
         int numero;
+        int niveau;
         vector <Joueur> VectJou;
 
     public:
         Joueur(); // cbon
         int getNumero(){return numero;}
+        string getNom(){return nom;}
         void Saisir(); // cbon
         void Remplir(); // cbon
         void AfficherJoueur(); // cbon
@@ -26,6 +28,8 @@ class Joueur
         void Ajouter(int); // permet l'ajout a une position donnée , cbon
         void Rechercher(int); //cbon
         void TotalJoueur(); // cbon
+        friend ostream& operator<< (ostream&, Joueur&);
+        friend istream& operator>> (istream&, Joueur&);
         ~Joueur();
 };
 

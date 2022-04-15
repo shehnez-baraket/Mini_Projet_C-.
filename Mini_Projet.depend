@@ -1,16 +1,19 @@
 # depslib dependency file v1.0
-1647266193 source:c:\users\hp\desktop\mini_projet\src\date.cpp
+1649890162 source:c:\users\hp\desktop\mini_projet\src\date.cpp
 	"Date.h"
 	<iostream>
 
-1647266171 c:\users\hp\desktop\mini_projet\include\date.h
+1649890075 c:\users\hp\desktop\mini_projet\include\date.h
+	<iostream>
+	<ostream>
 
-1647285934 source:c:\users\hp\desktop\mini_projet\main.cpp
+1649981732 source:c:\users\hp\desktop\mini_projet\main.cpp
 	<iostream>
 	<Personne.h>
 	<Joueur.h>
 	<Terrain.h>
 	<Partie.h>
+	<fstream>
 
 1647259033 c:\users\hp\desktop\mini_projet\include\personne.h
 	<string>
@@ -20,11 +23,11 @@
 	"Personne.h"
 	<iostream>
 
-1647269049 source:c:\users\hp\desktop\mini_projet\src\joueur.cpp
+1649892164 source:c:\users\hp\desktop\mini_projet\src\joueur.cpp
 	"Joueur.h"
 	<iostream>
 
-1647292777 c:\users\hp\desktop\mini_projet\include\joueur.h
+1649889042 c:\users\hp\desktop\mini_projet\include\joueur.h
 	<vector>
 	<Date.h>
 	<string>
@@ -35,16 +38,20 @@
 
 1647269848 c:\users\hp\desktop\mini_projet\include\terrain.h
 
-1647293549 source:c:\users\hp\desktop\mini_projet\src\partie.cpp
+1649982293 source:c:\users\hp\desktop\mini_projet\src\partie.cpp
 	"Partie.h"
 	<iostream>
 	<string>
+	<ostream>
+	<fstream>
 
-1647293547 c:\users\hp\desktop\mini_projet\include\partie.h
+1649980195 c:\users\hp\desktop\mini_projet\include\partie.h
 	<Joueur.h>
 
 1647293700 source:c:\users\hp\desktop\mini_projet\src\ticket.cpp
 	"Ticket.h"
 
-1647293789 c:\users\hp\desktop\mini_projet\include\ticket.h
+1648504096 c:\users\hp\desktop\mini_projet\include\ticket.h
+	<Date.h>
+	<string>
 

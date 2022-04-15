@@ -1,0 +1,14 @@
+Le type de la partie est :Eliminatoire
+**** L'affichage du premier joueur ****
+Nom : shehnez ,prenom : baraket ,ne(e) le : 26/5/1999 ,a le numero : 2 ,est le niveau : 2
+**** L'affichage du deuxieme joueur ****
+Nom : shaima ,prenom : baraket ,ne(e) le : 2/5/2003 ,a le numero : 2 ,est le niveau : 2
+ Le score du premier joueur est :14 et le score du deuxieme joueur est : 18
+
+Le type de la partie est :Demi finale
+**** L'affichage du premier joueur ****
+Nom : ahmed ,prenom : benaaisa ,ne(e) le : 25/8/2002 ,a le numero : 3 ,est le niveau : 3
+**** L'affichage du deuxieme joueur ****
+Nom : mokhtar ,prenom : sallemi ,ne(e) le : 15/11/1998 ,a le numero : 4 ,est le niveau : 4
+ Le score du premier joueur est :25 et le score du deuxieme joueur est : 30
+

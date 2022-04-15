@@ -1,7 +1,16 @@
 #include "Date.h"
 #include <iostream>
 using namespace std;
-
+ostream& operator<< (ostream& out, Date& d)
+{
+    out<<d.jour<<'/'<<d.mois<<'/'<<d.annee<<endl;
+    return out;
+}
+istream& operator>> (istream& in, Date& d)
+{
+    in>>d.jour>>d.mois>>d.annee;
+    return in;
+}
 Date::Date(int j, int m, int a)
 {
     jour=j;

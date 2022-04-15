@@ -1,7 +1,8 @@
 #ifndef DATE_H
 #define DATE_H
-
-
+using namespace std;
+#include<iostream>
+#include<ostream>
 class Date
 {
 private:
@@ -23,6 +24,8 @@ public:
     int getAnnee(){return annee;}
 
     void Afficher();
+    friend ostream& operator<< (ostream&, Date&);
+    friend istream& operator>> (istream&, Date&);
     ~Date();
 
 

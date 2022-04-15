@@ -1,6 +1,23 @@
 #include "Joueur.h"
 #include <iostream>
 using namespace std;
+ostream& operator<< (ostream& out, Joueur& Jou)
+{
+    out<<"Nom : "<<Jou.nom<<" ,prenom : "<<Jou.prenom<<" ,ne(e) le : "<<Jou.date_Naiss.getJour()<<"/"<<Jou.date_Naiss.getMois()<<"/"<<Jou.date_Naiss.getAnnee()<<" ,a le numero : "<< Jou.numero<<" ,est le niveau : "<< Jou.niveau<<endl;
+    return out;
+}
+
+istream& operator>> (istream& in, Joueur& Jou)
+{
+    cout<<"** Donner le nom et le prenom: **"<<endl;
+    in>> Jou.nom>> Jou.prenom;
+    cout<<"** Donner la date de naissance: **"<<endl;
+    in>>Jou.date_Naiss;
+    cout<<"** Donner le numero du joueur: **"<<endl;
+    in>>Jou.numero;
+    cout<<"** Donner le niveau du joueur: **"<<endl;
+    in>>Jou.niveau;
+}
 
 Joueur::Joueur(){}
 
@@ -12,6 +29,8 @@ void Joueur::Saisir()
     date_Naiss.Saisir();
     cout<<"** Donner le numero du joueur: **"<<endl;
     cin>>numero;
+    cout<<"** Donner le niveau du joueur: **"<<endl;
+    cin>>niveau;
 }
 
 void Joueur::Remplir()
@@ -35,12 +54,12 @@ void Joueur::Remplir()
 void Joueur::AfficherJoueur()
 {
 
-   cout<<"Nom : "<<nom<<" ,prenom : "<<prenom<<" ,ne(e) le : "<<date_Naiss.getJour()<<"/"<<date_Naiss.getMois()<<"/"<<date_Naiss.getAnnee()<<" ,a le numero : "<< numero<<endl;
+   cout<<"Nom : "<<nom<<" ,prenom : "<<prenom<<" ,ne(e) le : "<<date_Naiss.getJour()<<"/"<<date_Naiss.getMois()<<"/"<<date_Naiss.getAnnee()<<" ,a le numero : "<< numero<<" ,est le niveau : "<< niveau<<endl;
 }
 
 void Joueur::AfficherVect()
 {
-    cout<<"**** Affichage de tout les joueurs *****"<<endl;
+    cout<<"**** Affichage de tous les joueurs *****"<<endl;
     for(int i=0; i<VectJou.size(); i++)
     {
         VectJou[i].AfficherJoueur();
